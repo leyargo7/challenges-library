@@ -18,5 +18,8 @@ app.set("views", path.join(__dirname, 'views'));
 //routes
 app.use('/', router)
 
+//static files
+app.use(express.static(path.join(__dirname, 'public')))
+
 
 export default app
